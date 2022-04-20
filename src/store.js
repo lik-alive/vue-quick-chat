@@ -11,7 +11,8 @@ export default () => {
             myself: {},
             participants: [],
             chatTitle: '',
-            placeholder: ''
+            placeholder: '',
+            emptyChat: ''
         },
         mutations: {
             newMessage: (state, message) => {
@@ -27,9 +28,9 @@ export default () => {
             },
             setMessages: (state, messages) => {
                 state.messages = messages.map(message => {
-                    if(message.timestamp) (typeof message.timestamp == 'object') && (message.timestamp = DateTime.fromObject(message.timestamp).toISO())
+                    if (message.timestamp) (typeof message.timestamp == 'object') && (message.timestamp = DateTime.fromObject(message.timestamp).toISO())
                     else message.timestamp = DateTime.local().toISO();
-                    
+
                     if (!("myself" in message))
                         message.myself = message.participantId === state.myself.id;
                     return message
@@ -37,6 +38,9 @@ export default () => {
             },
             setChatTitle: (state, title) => {
                 state.chatTitle = title;
+            },
+            setEmptyChat: (state, text) => {
+                state.emptyChat = text;
             },
             setPlaceholder: (state, placeholder) => {
                 state.placeholder = placeholder;
@@ -57,7 +61,7 @@ export default () => {
             messages: (state) => {
                 let messages = [];
                 state.messages.forEach(message => {
-                    let newMessage = {...message};
+                    let newMessage = { ...message };
                     newMessage.timestamp = DateTime.fromISO(newMessage.timestamp);
                     messages.push(newMessage);
                 });
