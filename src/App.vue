@@ -27,7 +27,11 @@
                       @onImageSelected="onImageSelected"
                       @onMessageSubmit="onMessageSubmit"
                       @onType="onType"
-                      @onClose="onClose('param value')"/>
+                      @onClose="onClose('param value')">
+                    <template #input>
+                        <textarea></textarea>
+                    </template>
+                </Chat>
             </div>
             <div class="external-controller">
                 <div class="controller-btn-container">
@@ -76,54 +80,54 @@
                     profilePicture: 'https://lh3.googleusercontent.com/-G1d4-a7d_TY/AAAAAAAAAAI/AAAAAAAAAAA/AAKWJJPez_wX5UCJztzEUeCxOd7HBK7-jA.CMID/s83-c/photo.jpg'
                 },
                 messages: [
-                    {
-                        content: "Really?! I don't care! Haha",
-                        participantId: 1,
-                        timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
-                        uploaded: true,
-                        viewed: true,
-                        type: 'text'
-                    },
-                    {
-                        content: "Really?! I don't care! Haha",
-                        participantId: 1,
-                        timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
-                        uploaded: true,
-                        viewed: true,
-                        type: 'text'
-                    },
-                    {
-                        content: "Really?! I don't care! Haha",
-                        participantId: 1,
-                        timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
-                        uploaded: true,
-                        viewed: true,
-                        type: 'text'
-                    },
-                    {
-                        content: "Hey, Jhon Doe! How are you today",
-                        participantId: 1,
-                        timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
-                        uploaded: true,
-                        viewed: true,
-                        type: 'text'
-                    },
-                    {
-                        content: "Hey, Adam! I'm felling really fine this evening.",
-                        participantId: 3,
-                        timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
-                        uploaded: true,
-                        viewed: true,
-                        type: 'text'
-                    },
-                    {
-                        content: "Really?! I don't care! Haha www.google.com",
-                        participantId: 1,
-                        timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
-                        uploaded: true,
-                        viewed: true,
-                        type: 'text'
-                    },
+                    // {
+                    //     content: "Really?! I don't care! Haha",
+                    //     participantId: 1,
+                    //     timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
+                    //     uploaded: true,
+                    //     viewed: true,
+                    //     type: 'text'
+                    // },
+                    // {
+                    //     content: "Really?! I don't care! Haha",
+                    //     participantId: 1,
+                    //     timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
+                    //     uploaded: true,
+                    //     viewed: true,
+                    //     type: 'text'
+                    // },
+                    // {
+                    //     content: "Really?! I don't care! Haha",
+                    //     participantId: 1,
+                    //     timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
+                    //     uploaded: true,
+                    //     viewed: true,
+                    //     type: 'text'
+                    // },
+                    // {
+                    //     content: "Hey, Jhon Doe! How are you today",
+                    //     participantId: 1,
+                    //     timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
+                    //     uploaded: true,
+                    //     viewed: true,
+                    //     type: 'text'
+                    // },
+                    // {
+                    //     content: "Hey, Adam! I'm felling really fine this evening.",
+                    //     participantId: 3,
+                    //     timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
+                    //     uploaded: true,
+                    //     viewed: true,
+                    //     type: 'text'
+                    // },
+                    // {
+                    //     content: "Really?! I don't care! Haha www.google.com",
+                    //     participantId: 1,
+                    //     timestamp: {year: 2012, month: 3, day: 5, hour: 20, minute: 10, second: 3, millisecond: 123},
+                    //     uploaded: true,
+                    //     viewed: true,
+                    //     type: 'text'
+                    // },
                 ],
                 chatTitle: 'My chat title',
                 placeholder: 'send your message',
@@ -162,20 +166,20 @@
                 closeButtonIconSize: "20px",
                 asyncMode: true,
                 toLoad: [
-                    {
-                        content: 'Hey, John Doe! How are you today?',
-                        participantId: 2,
-                        timestamp: { year: 2016, month: 3, day: 5, hour: 10, minute: 10, second: 3, millisecond: 123 },
-                        uploaded: true,
-                        viewed: true
-                    },
-                    {
-                        content: "Hey, Adam! I'm feeling really fine this evening.",
-                        participantId: 3,
-                        timestamp: { year: 2016, month: 1, day: 5, hour: 19, minute: 10, second: 3, millisecond:123 },
-                        uploaded: true,
-                        viewed: true
-                    },
+                    // {
+                    //     content: 'Hey, John Doe! How are you today?',
+                    //     participantId: 2,
+                    //     timestamp: { year: 2016, month: 3, day: 5, hour: 10, minute: 10, second: 3, millisecond: 123 },
+                    //     uploaded: true,
+                    //     viewed: true
+                    // },
+                    // {
+                    //     content: "Hey, Adam! I'm feeling really fine this evening.",
+                    //     participantId: 3,
+                    //     timestamp: { year: 2016, month: 1, day: 5, hour: 19, minute: 10, second: 3, millisecond:123 },
+                    //     uploaded: true,
+                    //     viewed: true
+                    // },
                 ],
                 scrollBottom: {
                     messageSent: true,

@@ -1,9 +1,12 @@
 <template>
     <div class="container-message-manager">
         <div class="message-text-box">
-            <div ref="userInput" class="message-input" :placeholder="placeholder"
-                 tabIndex="0" contenteditable="true"
-                 @input="handleType" @keyup.enter.exact="sendMessage"></div>
+            <div ref="userInputContainer" class="message-input-container" @keyup="handleKeyUp" @input="handleType">
+                <slot name="input">
+                    <div :placeholder="placeholder"
+                         tabIndex="0" contenteditable="true"></div>
+                </slot>
+            </div>
         </div>
         <div class="container-send-message icon-send-message" @click.prevent="sendMessage">
             <SendIcon :size="submitIconSize" :fill-color="colors.submitIcon"/>
@@ -81,8 +84,10 @@
                 'newMessage'
             ]),
             sendMessage(e) {
-                this.textInput = this.$refs.userInput.textContent;
-                this.$refs.userInput.textContent = '';
+                const input = this.$refs.userInputContainer.children[0];
+                this.textInput = input.value || input.textContent;
+                input.value = '';
+                input.textContent = '';
                 // match characters that are different of spaces, tabs, line breaks...
                 const matchNotEmpty = /[^\s]+/i
                 // match characters that are between line spaces, tabs, line breaks...
@@ -100,6 +105,11 @@
                     this.$emit("onMessageSubmit", message);
                     //this.onMessageSubmit(message);
                     this.newMessage(message)
+                }
+            },
+            handleKeyUp: function(e) {
+                if (e.code === 'Enter' && e.ctrlKey) {
+                    this.sendMessage();
                 }
             },
             handleType: function (e) {
@@ -144,7 +154,7 @@
             overflow: hidden;
         }
 
-        .message-input {
+        .message-input-container > * {
             width: 100%;
             resize: none;
             border: none;
@@ -167,14 +177,14 @@
             display: inline-block;
         }
 
-        .message-input:empty:before {
+        .message-input-container > *:empty:before {
             content: attr(placeholder);
             display: block; /* For Firefox */
             filter: contrast(15%);
             outline: none;
         }
 
-        .message-input:focus {
+        .message-input-container > *:focus {
             outline: none;
         }
 

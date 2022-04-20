@@ -20,7 +20,11 @@
                         :accept-image-types="acceptImageTypes"
                         @onImageSelected="onImageSelected"
                         @onMessageSubmit="onMessageSubmit"
-                        @onType="onType"/>
+                        @onType="onType">
+            <template #input>
+                <slot name="input"></slot>
+            </template>
+        </MessageManager>
     </div>
 </template>
 
@@ -60,6 +64,10 @@
                 type: String,
                 required: false,
                 default: 'type your message here'
+            },
+            emptyChat: {
+                type: String,
+                default: 'No messages'
             },
             colors: {
                 type: Object,
@@ -183,6 +191,9 @@
             },
             chatTitle() {
                 this.setChatTitle(this.chatTitle);
+            },
+            emptyChat() {
+                this.setEmptyChat(this.emptyChat);
             }
         },
         beforeCreate() {
@@ -194,6 +205,7 @@
             this.setMessages(this.messages);
             this.setPlaceholder(this.placeholder);
             this.setChatTitle(this.chatTitle);
+            this.setEmptyChat(this.emptyChat);
         },
         methods: {
             ...mapMutations([
@@ -201,7 +213,8 @@
                 'setMyself',
                 'setMessages',
                 'setPlaceholder',
-                'setChatTitle'
+                'setChatTitle',
+                'setEmptyChat'
             ]),
             onClose: function(){
                 this.$emit("onClose");
