@@ -275,6 +275,7 @@ export default {
 
   .empty-chat {
       padding-top: 30px;
+      text-align: center;
       color: rgb(129, 127, 127);
       font-size: 14px;
   }

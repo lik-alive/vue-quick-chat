@@ -16550,12 +16550,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Header = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageDisplay.vue?vue&type=template&id=6d14ad8c&
-var MessageDisplayvue_type_template_id_6d14ad8c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"containerMessageDisplay",staticClass:"container-message-display",style:({ background: _vm.colors.message.messagesDisplay.bg }),on:{"scroll":_vm.updateScrollState}},[(_vm.loading)?_c('div',{staticClass:"loader"},[_c('div',{staticClass:"message-loading"})]):(!_vm.messages.length)?_c('div',{staticClass:"empty-chat"},[_vm._v(" "+_vm._s(_vm.emptyChat)+" ")]):_vm._e(),(_vm.messages.length)?_vm._t("default",function(){return _vm._l((_vm.messages),function(message,index){return _c('div',{key:index,staticClass:"message-container"},[(message.myself)?_c('MyMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.myself,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}}):_c('OtherMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.others,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}})],1)})}):_vm._e()],2)}
-var MessageDisplayvue_type_template_id_6d14ad8c_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageDisplay.vue?vue&type=template&id=6701a60b&
+var MessageDisplayvue_type_template_id_6701a60b_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"containerMessageDisplay",staticClass:"container-message-display",style:({ background: _vm.colors.message.messagesDisplay.bg }),on:{"scroll":_vm.updateScrollState}},[(_vm.loading)?_c('div',{staticClass:"loader"},[_c('div',{staticClass:"message-loading"})]):(!_vm.messages.length)?_c('div',{staticClass:"empty-chat"},[_vm._v(" "+_vm._s(_vm.emptyChat)+" ")]):_vm._e(),(_vm.messages.length)?_vm._t("default",function(){return _vm._l((_vm.messages),function(message,index){return _c('div',{key:index,staticClass:"message-container"},[(message.myself)?_c('MyMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.myself,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}}):_c('OtherMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.others,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}})],1)})}):_vm._e()],2)}
+var MessageDisplayvue_type_template_id_6701a60b_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MessageDisplay.vue?vue&type=template&id=6d14ad8c&
+// CONCATENATED MODULE: ./src/components/MessageDisplay.vue?vue&type=template&id=6701a60b&
 
 // EXTERNAL MODULE: ./node_modules/vuex/dist/vuex.esm.js
 var vuex_esm = __webpack_require__("2f62");
@@ -17183,8 +17183,8 @@ var MessageDisplayvue_type_style_index_0_lang_less_ = __webpack_require__("81ce"
 
 var MessageDisplay_component = normalizeComponent(
   components_MessageDisplayvue_type_script_lang_js_,
-  MessageDisplayvue_type_template_id_6d14ad8c_render,
-  MessageDisplayvue_type_template_id_6d14ad8c_staticRenderFns,
+  MessageDisplayvue_type_template_id_6701a60b_render,
+  MessageDisplayvue_type_template_id_6701a60b_staticRenderFns,
   false,
   null,
   null,
