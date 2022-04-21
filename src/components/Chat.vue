@@ -20,11 +20,7 @@
                         :accept-image-types="acceptImageTypes"
                         @onImageSelected="onImageSelected"
                         @onMessageSubmit="onMessageSubmit"
-                        @onType="onType">
-            <template #input>
-                <slot name="input"></slot>
-            </template>
-        </MessageManager>
+                        @onType="onType"/>
     </div>
 </template>
 

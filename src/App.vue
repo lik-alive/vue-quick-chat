@@ -27,11 +27,7 @@
                       @onImageSelected="onImageSelected"
                       @onMessageSubmit="onMessageSubmit"
                       @onType="onType"
-                      @onClose="onClose('param value')">
-                    <template #input>
-                        <textarea></textarea>
-                    </template>
-                </Chat>
+                      @onClose="onClose('param value')"/>
             </div>
             <div class="external-controller">
                 <div class="controller-btn-container">
@@ -258,7 +254,7 @@
                 * It's important to notice that even when your message wasn't send
                 * yet to the server you have to add the message into the array
                 */
-                this.messages.push(message);
+                // this.messages.push(message);
 
                 /*
                 * you can update message state after the server response

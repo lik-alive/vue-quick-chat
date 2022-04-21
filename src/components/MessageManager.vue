@@ -1,12 +1,13 @@
 <template>
     <div class="container-message-manager">
         <div class="message-text-box">
-            <div ref="userInputContainer" class="message-input-container" @keyup="handleKeyUp" @input="handleType">
-                <slot name="input">
-                    <div :placeholder="placeholder"
-                         tabIndex="0" contenteditable="true"></div>
-                </slot>
-            </div>
+            <v-form ref="form">
+                <v-textarea v-model="textInput" rows="1" class="message-input"
+                            :placeholder="placeholder"
+                            tab-index="0" auto-grow counter="255"
+                            :rules="[ v => !v || v.length <= 255]"
+                            @keyup="handleKeyUp" @input="handleType"/>
+            </v-form>
         </div>
         <div class="container-send-message icon-send-message" @click.prevent="sendMessage">
             <SendIcon :size="submitIconSize" :fill-color="colors.submitIcon"/>
@@ -87,16 +88,8 @@
                 'newMessage'
             ]),
             sendMessage(e) {
-                const textarea = this.$refs.userInputContainer.getElementsByTagName('textarea')[0];
-                const input = this.$refs.userInputContainer.children[0];
-                if (textarea) {
-                    this.textInput = textarea.value;
-                    textarea.value = '';
-                } else {
-                    this.textInput = input.textContent;    
-                    input.textContent = '';
-                }
-                
+                if (!this.$refs.form.validate()) return;
+
                 // match characters that are different of spaces, tabs, line breaks...
                 const matchNotEmpty = /[^\s]+/i
                 // match characters that are between line spaces, tabs, line breaks...
@@ -115,6 +108,7 @@
                     //this.onMessageSubmit(message);
 
                     if (this.autoAdd) this.newMessage(message)
+                    this.textInput = '';
                 }
             },
             handleKeyUp: function(e) {
@@ -158,16 +152,13 @@
         box-shadow: 0px -2px 40px 0px rgba(186, 186, 186, 0.67);
 
         .message-text-box {
-            padding: 0 10px 0 10px;
+            padding: 10px;
             flex: 1;
             overflow: hidden;
         }
 
-        .message-input-container > * {
+        .message-input textarea {
             width: 100%;
-            resize: none;
-            border: none;
-            outline: none;
             box-sizing: border-box;
             font-size: 15px;
             font-weight: 400;
@@ -176,7 +167,6 @@
             word-wrap: break-word;
             color: #565867;
             -webkit-font-smoothing: antialiased;
-            max-height: 200px;
             bottom: 0;
             overflow: scroll;
             overflow-x: hidden;
@@ -184,16 +174,17 @@
             text-align: left;
             cursor: text;
             display: inline-block;
+            max-height: 160px;
         }
 
-        .message-input-container > *:empty:before {
+        .message-input textarea:empty:before {
             content: attr(placeholder);
             display: block; /* For Firefox */
             filter: contrast(15%);
             outline: none;
         }
 
-        .message-input-container > *:focus {
+        .message-input textarea:focus {
             outline: none;
         }
 
