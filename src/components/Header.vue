@@ -82,7 +82,8 @@
 
 <style lang="less">
     .quick-chat-container .header-container {
-        height: 70px;
+        height: 50px;
+        flex: 50px 0 0;
         display: flex;
         padding: 0 20px 0 10px;
         align-items: center;
