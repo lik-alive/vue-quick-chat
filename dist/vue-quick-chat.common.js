@@ -17193,12 +17193,12 @@ var MessageDisplay_component = normalizeComponent(
 )
 
 /* harmony default export */ var MessageDisplay = (MessageDisplay_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageManager.vue?vue&type=template&id=64816899&
-var MessageManagervue_type_template_id_64816899_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-message-manager"},[_c('div',{staticClass:"message-text-box"},[_c('div',{ref:"userInputContainer",staticClass:"message-input-container",on:{"keyup":_vm.handleKeyUp,"input":_vm.handleType}},[_vm._t("input",function(){return [_c('div',{attrs:{"placeholder":_vm.placeholder,"tabIndex":"0","contenteditable":"true"}})]})],2)]),_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":function($event){$event.preventDefault();return _vm.sendMessage.apply(null, arguments)}}},[_c('SendIcon',{attrs:{"size":_vm.submitIconSize,"fill-color":_vm.colors.submitIcon}})],1),(_vm.sendImages)?_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":_vm.pickImage}},[_c('input',{ref:"inputImage",staticStyle:{"display":"none"},attrs:{"accept":_vm.acceptImageTypes,"type":"file"},on:{"input":_vm.handleImageChange}}),_c('ImageIcon',{attrs:{"size":_vm.submitImageIconSize,"fill-color":_vm.colors.submitImageIcon}})],1):_vm._e()])}
-var MessageManagervue_type_template_id_64816899_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageManager.vue?vue&type=template&id=1e1243bc&
+var MessageManagervue_type_template_id_1e1243bc_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-message-manager"},[_c('div',{staticClass:"message-text-box"},[_c('div',{ref:"userInputContainer",staticClass:"message-input-container",on:{"keyup":_vm.handleKeyUp,"input":_vm.handleType}},[_vm._t("input",function(){return [_c('div',{attrs:{"placeholder":_vm.placeholder,"tabIndex":"0","contenteditable":"true"}})]})],2)]),_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":function($event){$event.preventDefault();return _vm.sendMessage.apply(null, arguments)}}},[_c('SendIcon',{attrs:{"size":_vm.submitIconSize,"fill-color":_vm.colors.submitIcon}})],1),(_vm.sendImages)?_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":_vm.pickImage}},[_c('input',{ref:"inputImage",staticStyle:{"display":"none"},attrs:{"accept":_vm.acceptImageTypes,"type":"file"},on:{"input":_vm.handleImageChange}}),_c('ImageIcon',{attrs:{"size":_vm.submitImageIconSize,"fill-color":_vm.colors.submitImageIcon}})],1):_vm._e()])}
+var MessageManagervue_type_template_id_1e1243bc_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MessageManager.vue?vue&type=template&id=64816899&
+// CONCATENATED MODULE: ./src/components/MessageManager.vue?vue&type=template&id=1e1243bc&
 
 // EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
 var runtime = __webpack_require__("96cf");
@@ -17495,10 +17495,17 @@ function MessageManagervue_type_script_lang_js_objectSpread(target) { for (var i
   },
   methods: MessageManagervue_type_script_lang_js_objectSpread(MessageManagervue_type_script_lang_js_objectSpread({}, Object(vuex_esm["c" /* mapMutations */])(['newMessage'])), {}, {
     sendMessage: function sendMessage(e) {
+      var textarea = this.$refs.userInputContainer.getElementsByTagName('textarea')[0];
       var input = this.$refs.userInputContainer.children[0];
-      this.textInput = input.value || input.textContent;
-      input.value = '';
-      input.textContent = ''; // match characters that are different of spaces, tabs, line breaks...
+
+      if (textarea) {
+        this.textInput = textarea.value;
+        textarea.value = '';
+      } else {
+        this.textInput = input.textContent;
+        input.textContent = '';
+      } // match characters that are different of spaces, tabs, line breaks...
+
 
       var matchNotEmpty = /[^\s]+/i; // match characters that are between line spaces, tabs, line breaks...
 
@@ -17587,8 +17594,8 @@ var MessageManagervue_type_style_index_0_lang_less_ = __webpack_require__("9104"
 
 var MessageManager_component = normalizeComponent(
   components_MessageManagervue_type_script_lang_js_,
-  MessageManagervue_type_template_id_64816899_render,
-  MessageManagervue_type_template_id_64816899_staticRenderFns,
+  MessageManagervue_type_template_id_1e1243bc_render,
+  MessageManagervue_type_template_id_1e1243bc_staticRenderFns,
   false,
   null,
   null,
