@@ -41,7 +41,6 @@
 
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import { DateTime } from "luxon";
 import MyMessage from "./MyMessage.vue";
 import OtherMessage from "./OtherMessage.vue";
 export default {

@@ -16559,12 +16559,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Header = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageDisplay.vue?vue&type=template&id=6701a60b&
-var MessageDisplayvue_type_template_id_6701a60b_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"containerMessageDisplay",staticClass:"container-message-display",style:({ background: _vm.colors.message.messagesDisplay.bg }),on:{"scroll":_vm.updateScrollState}},[(_vm.loading)?_c('div',{staticClass:"loader"},[_c('div',{staticClass:"message-loading"})]):(!_vm.messages.length)?_c('div',{staticClass:"empty-chat"},[_vm._v(" "+_vm._s(_vm.emptyChat)+" ")]):_vm._e(),(_vm.messages.length)?_vm._t("default",function(){return _vm._l((_vm.messages),function(message,index){return _c('div',{key:index,staticClass:"message-container"},[(message.myself)?_c('MyMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.myself,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}}):_c('OtherMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.others,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}})],1)})}):_vm._e()],2)}
-var MessageDisplayvue_type_template_id_6701a60b_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageDisplay.vue?vue&type=template&id=3e5bd8d8&
+var MessageDisplayvue_type_template_id_3e5bd8d8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"containerMessageDisplay",staticClass:"container-message-display",style:({ background: _vm.colors.message.messagesDisplay.bg }),on:{"scroll":_vm.updateScrollState}},[(_vm.loading)?_c('div',{staticClass:"loader"},[_c('div',{staticClass:"message-loading"})]):(!_vm.messages.length)?_c('div',{staticClass:"empty-chat"},[_vm._v(" "+_vm._s(_vm.emptyChat)+" ")]):_vm._e(),(_vm.messages.length)?_vm._t("default",function(){return _vm._l((_vm.messages),function(message,index){return _c('div',{key:index,staticClass:"message-container"},[(message.myself)?_c('MyMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.myself,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}}):_c('OtherMessage',{attrs:{"message":message,"async-mode":_vm.asyncMode,"colors":_vm.colors,"link-options":_vm.linkOptions.others,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}})],1)})}):_vm._e()],2)}
+var MessageDisplayvue_type_template_id_3e5bd8d8_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MessageDisplay.vue?vue&type=template&id=6701a60b&
+// CONCATENATED MODULE: ./src/components/MessageDisplay.vue?vue&type=template&id=3e5bd8d8&
 
 // EXTERNAL MODULE: ./node_modules/vuex/dist/vuex.esm.js
 var vuex_esm = __webpack_require__("2f62");
@@ -17043,7 +17043,6 @@ function MessageDisplayvue_type_script_lang_js_objectSpread(target) { for (var i
 
 
 
-
 /* harmony default export */ var MessageDisplayvue_type_script_lang_js_ = ({
   components: {
     MyMessage: MyMessage,
@@ -17192,8 +17191,8 @@ var MessageDisplayvue_type_style_index_0_lang_less_ = __webpack_require__("81ce"
 
 var MessageDisplay_component = normalizeComponent(
   components_MessageDisplayvue_type_script_lang_js_,
-  MessageDisplayvue_type_template_id_6701a60b_render,
-  MessageDisplayvue_type_template_id_6701a60b_staticRenderFns,
+  MessageDisplayvue_type_template_id_3e5bd8d8_render,
+  MessageDisplayvue_type_template_id_3e5bd8d8_staticRenderFns,
   false,
   null,
   null,
@@ -17613,26 +17612,6 @@ var MessageManager_component = normalizeComponent(
 )
 
 /* harmony default export */ var MessageManager = (MessageManager_component.exports);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/symbol.js
-var symbol = __webpack_require__("67bb");
-var symbol_default = /*#__PURE__*/__webpack_require__.n(symbol);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js
-var iterator = __webpack_require__("5d58");
-var iterator_default = /*#__PURE__*/__webpack_require__.n(iterator);
-
-// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js
-
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  return _typeof = "function" == typeof symbol_default.a && "symbol" == typeof iterator_default.a ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof symbol_default.a && obj.constructor === symbol_default.a && obj !== symbol_default.a.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
-}
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js
 var is_array = __webpack_require__("a745");
 var is_array_default = /*#__PURE__*/__webpack_require__.n(is_array);
@@ -17653,6 +17632,14 @@ function _arrayLikeToArray(arr, len) {
 function _arrayWithoutHoles(arr) {
   if (is_array_default()(arr)) return _arrayLikeToArray(arr);
 }
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/symbol.js
+var symbol = __webpack_require__("67bb");
+var symbol_default = /*#__PURE__*/__webpack_require__.n(symbol);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js
+var iterator = __webpack_require__("5d58");
+var iterator_default = /*#__PURE__*/__webpack_require__.n(iterator);
+
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/array/from.js
 var from = __webpack_require__("774e");
 var from_default = /*#__PURE__*/__webpack_require__.n(from);
@@ -17695,7 +17682,6 @@ function _toConsumableArray(arr) {
 
 
 
-
 function store_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function store_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? store_ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : store_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -17729,7 +17715,9 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vuex_esm["a" /* defau
       },
       setMessages: function setMessages(state, messages) {
         state.messages = messages.map(function (message) {
-          if (message.timestamp) _typeof(message.timestamp) == 'object' && (message.timestamp = luxon["DateTime"].fromObject(message.timestamp).toISO());else message.timestamp = luxon["DateTime"].local().toISO();
+          // if (message.timestamp) (typeof message.timestamp == 'object') && (message.timestamp = DateTime.fromObject(message.timestamp).toISO())
+          // else message.timestamp = DateTime.local().toISO();
+          console.log(luxon["DateTime"].fromObject(message.timestamp));
           if (!("myself" in message)) message.myself = message.participantId === state.myself.id;
           return message;
         });
