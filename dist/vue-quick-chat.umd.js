@@ -16302,12 +16302,12 @@ if (typeof window !== 'undefined') {
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Chat.vue?vue&type=template&id=fae752b2&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Chat.vue?vue&type=template&id=8ba730d8&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"quick-chat-container",style:({'border-bottom-left-radius': _vm.borderStyle.bottomLeft, 'border-bottom-right-radius': _vm.borderStyle.bottomRight, 'border-top-right-radius': _vm.borderStyle.topRight, 'border-top-left-radius': _vm.borderStyle.topLeft})},[(_vm.displayHeader)?_c('Header',{attrs:{"colors":_vm.colors,"border-style":_vm.borderStyle,"hide-close-button":_vm.hideCloseButton,"close-button-icon-size":_vm.closeButtonIconSize},on:{"onClose":function($event){return _vm.onClose()}},scopedSlots:_vm._u([{key:"header",fn:function(){return [_vm._t("header")]},proxy:true}],null,true)}):_vm._e(),_c('MessageDisplay',{attrs:{"colors":_vm.colors,"async-mode":_vm.asyncMode,"load-more-messages":_vm.loadMoreMessages,"link-options":_vm.linkOptions,"scroll-bottom":_vm.scrollBottom,"profile-picture-config":_vm.profilePictureConfig,"timestamp-config":_vm.timestampConfig},on:{"onImageClicked":_vm.onImageClicked}}),_c('MessageManager',{attrs:{"colors":_vm.colors,"border-style":_vm.borderStyle,"submit-icon-size":_vm.submitIconSize,"submit-image-icon-size":_vm.submitImageIconSize,"send-images":_vm.sendImages,"accept-image-types":_vm.acceptImageTypes},on:{"onImageSelected":_vm.onImageSelected,"onMessageSubmit":_vm.onMessageSubmit,"onType":_vm.onType},scopedSlots:_vm._u([{key:"input",fn:function(){return [_vm._t("input")]},proxy:true}],null,true)})],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Chat.vue?vue&type=template&id=fae752b2&
+// CONCATENATED MODULE: ./src/components/Chat.vue?vue&type=template&id=8ba730d8&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es7.object.get-own-property-descriptors.js
 var es7_object_get_own_property_descriptors = __webpack_require__("8e6e");
@@ -17202,12 +17202,12 @@ var MessageDisplay_component = normalizeComponent(
 )
 
 /* harmony default export */ var MessageDisplay = (MessageDisplay_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageManager.vue?vue&type=template&id=07e72a40&
-var MessageManagervue_type_template_id_07e72a40_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-message-manager"},[_c('div',{staticClass:"message-text-box"},[_c('div',{ref:"userInputContainer",staticClass:"message-input-container",on:{"keyup":_vm.handleKeyUp,"input":_vm.handleType}},[_vm._t("input",function(){return [_c('div',{attrs:{"placeholder":_vm.placeholder,"tabIndex":"0","contenteditable":"true"}})]})],2)]),_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":function($event){$event.preventDefault();return _vm.sendMessage.apply(null, arguments)}}},[_c('SendIcon',{attrs:{"size":_vm.submitIconSize,"fill-color":_vm.colors.submitIcon}})],1),(_vm.sendImages)?_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":_vm.pickImage}},[_c('input',{ref:"inputImage",staticStyle:{"display":"none"},attrs:{"accept":_vm.acceptImageTypes,"type":"file"},on:{"input":_vm.handleImageChange}}),_c('ImageIcon',{attrs:{"size":_vm.submitImageIconSize,"fill-color":_vm.colors.submitImageIcon}})],1):_vm._e()])}
-var MessageManagervue_type_template_id_07e72a40_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2f1ad308-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MessageManager.vue?vue&type=template&id=64816899&
+var MessageManagervue_type_template_id_64816899_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-message-manager"},[_c('div',{staticClass:"message-text-box"},[_c('div',{ref:"userInputContainer",staticClass:"message-input-container",on:{"keyup":_vm.handleKeyUp,"input":_vm.handleType}},[_vm._t("input",function(){return [_c('div',{attrs:{"placeholder":_vm.placeholder,"tabIndex":"0","contenteditable":"true"}})]})],2)]),_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":function($event){$event.preventDefault();return _vm.sendMessage.apply(null, arguments)}}},[_c('SendIcon',{attrs:{"size":_vm.submitIconSize,"fill-color":_vm.colors.submitIcon}})],1),(_vm.sendImages)?_c('div',{staticClass:"container-send-message icon-send-message",on:{"click":_vm.pickImage}},[_c('input',{ref:"inputImage",staticStyle:{"display":"none"},attrs:{"accept":_vm.acceptImageTypes,"type":"file"},on:{"input":_vm.handleImageChange}}),_c('ImageIcon',{attrs:{"size":_vm.submitImageIconSize,"fill-color":_vm.colors.submitImageIcon}})],1):_vm._e()])}
+var MessageManagervue_type_template_id_64816899_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/MessageManager.vue?vue&type=template&id=07e72a40&
+// CONCATENATED MODULE: ./src/components/MessageManager.vue?vue&type=template&id=64816899&
 
 // EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
 var runtime = __webpack_require__("96cf");
@@ -17497,6 +17497,9 @@ function MessageManagervue_type_script_lang_js_objectSpread(target) { for (var i
     },
     placeholder: function placeholder() {
       return this.$store.state.placeholder;
+    },
+    autoAdd: function autoAdd() {
+      return this.$store.state.autoAdd;
     }
   },
   methods: MessageManagervue_type_script_lang_js_objectSpread(MessageManagervue_type_script_lang_js_objectSpread({}, Object(vuex_esm["c" /* mapMutations */])(['newMessage'])), {}, {
@@ -17522,7 +17525,7 @@ function MessageManagervue_type_script_lang_js_objectSpread(target) { for (var i
         };
         this.$emit("onMessageSubmit", message); //this.onMessageSubmit(message);
 
-        this.newMessage(message);
+        if (this.autoAdd) this.newMessage(message);
       }
     },
     handleKeyUp: function handleKeyUp(e) {
@@ -17593,8 +17596,8 @@ var MessageManagervue_type_style_index_0_lang_less_ = __webpack_require__("9104"
 
 var MessageManager_component = normalizeComponent(
   components_MessageManagervue_type_script_lang_js_,
-  MessageManagervue_type_template_id_07e72a40_render,
-  MessageManagervue_type_template_id_07e72a40_staticRenderFns,
+  MessageManagervue_type_template_id_64816899_render,
+  MessageManagervue_type_template_id_64816899_staticRenderFns,
   false,
   null,
   null,
@@ -17702,7 +17705,8 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vuex_esm["a" /* defau
       participants: [],
       chatTitle: '',
       placeholder: '',
-      emptyChat: ''
+      emptyChat: '',
+      autoAdd: true
     },
     mutations: {
       newMessage: function newMessage(state, message) {
@@ -17731,6 +17735,9 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vuex_esm["a" /* defau
       },
       setPlaceholder: function setPlaceholder(state, placeholder) {
         state.placeholder = placeholder;
+      },
+      setAutoAdd: function setAutoAdd(state, value) {
+        state.autoAdd = value;
       }
     },
     actions: {},
@@ -17842,6 +17849,10 @@ function Chatvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i < 
     emptyChat: {
       type: String,
       default: 'No messages'
+    },
+    autoAdd: {
+      type: Boolean,
+      default: false
     },
     colors: {
       type: Object,
@@ -17968,6 +17979,9 @@ function Chatvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i < 
     },
     emptyChat: function emptyChat() {
       this.setEmptyChat(this.emptyChat);
+    },
+    autoAdd: function autoAdd() {
+      this.setAutoAdd(this.autoAdd);
     }
   },
   beforeCreate: function beforeCreate() {
@@ -17980,8 +17994,9 @@ function Chatvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i < 
     this.setPlaceholder(this.placeholder);
     this.setChatTitle(this.chatTitle);
     this.setEmptyChat(this.emptyChat);
+    this.setAutoAdd(this.autoAdd);
   },
-  methods: Chatvue_type_script_lang_js_objectSpread(Chatvue_type_script_lang_js_objectSpread({}, Object(vuex_esm["c" /* mapMutations */])(['setParticipants', 'setMyself', 'setMessages', 'setPlaceholder', 'setChatTitle', 'setEmptyChat'])), {}, {
+  methods: Chatvue_type_script_lang_js_objectSpread(Chatvue_type_script_lang_js_objectSpread({}, Object(vuex_esm["c" /* mapMutations */])(['setParticipants', 'setMyself', 'setMessages', 'setPlaceholder', 'setChatTitle', 'setEmptyChat', 'setAutoAdd'])), {}, {
     onClose: function onClose() {
       this.$emit("onClose");
     },

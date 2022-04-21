@@ -12,7 +12,8 @@ export default () => {
             participants: [],
             chatTitle: '',
             placeholder: '',
-            emptyChat: ''
+            emptyChat: '',
+            autoAdd: true
         },
         mutations: {
             newMessage: (state, message) => {
@@ -44,6 +45,9 @@ export default () => {
             },
             setPlaceholder: (state, placeholder) => {
                 state.placeholder = placeholder;
+            },
+            setAutoAdd: (state, value) => {
+                state.autoAdd = value;
             }
         },
         actions: {},

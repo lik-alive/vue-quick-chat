@@ -69,6 +69,10 @@
                 type: String,
                 default: 'No messages'
             },
+            autoAdd: {
+                type: Boolean,
+                default: false
+            },
             colors: {
                 type: Object,
                 required: true
@@ -194,6 +198,9 @@
             },
             emptyChat() {
                 this.setEmptyChat(this.emptyChat);
+            },
+            autoAdd() {
+                this.setAutoAdd(this.autoAdd);
             }
         },
         beforeCreate() {
@@ -206,6 +213,7 @@
             this.setPlaceholder(this.placeholder);
             this.setChatTitle(this.chatTitle);
             this.setEmptyChat(this.emptyChat);
+            this.setAutoAdd(this.autoAdd);
         },
         methods: {
             ...mapMutations([
@@ -214,7 +222,8 @@
                 'setMessages',
                 'setPlaceholder',
                 'setChatTitle',
-                'setEmptyChat'
+                'setEmptyChat',
+                'setAutoAdd'
             ]),
             onClose: function(){
                 this.$emit("onClose");

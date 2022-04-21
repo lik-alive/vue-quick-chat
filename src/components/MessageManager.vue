@@ -77,6 +77,9 @@
             },
             placeholder() {
                 return this.$store.state.placeholder;
+            },
+            autoAdd() {
+                return this.$store.state.autoAdd;
             }
         },
         methods: {
@@ -104,7 +107,8 @@
                     };
                     this.$emit("onMessageSubmit", message);
                     //this.onMessageSubmit(message);
-                    this.newMessage(message)
+
+                    if (this.autoAdd) this.newMessage(message)
                 }
             },
             handleKeyUp: function(e) {
@@ -140,7 +144,6 @@
 
 <style lang="less">
     .quick-chat-container .container-message-manager {
-        height: 65px;
         background: #fff;
         display: flex;
         align-items: center;
@@ -167,7 +170,7 @@
             word-wrap: break-word;
             color: #565867;
             -webkit-font-smoothing: antialiased;
-            max-height: 40px;
+            max-height: 200px;
             bottom: 0;
             overflow: scroll;
             overflow-x: hidden;
