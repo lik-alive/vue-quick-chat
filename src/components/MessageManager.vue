@@ -87,10 +87,16 @@
                 'newMessage'
             ]),
             sendMessage(e) {
+                const textarea = this.$refs.userInputContainer.getElementsByTagName('textarea')[0];
                 const input = this.$refs.userInputContainer.children[0];
-                this.textInput = input.value || input.textContent;
-                input.value = '';
-                input.textContent = '';
+                if (textarea) {
+                    this.textInput = textarea.value;
+                    textarea.value = '';
+                } else {
+                    this.textInput = input.textContent;    
+                    input.textContent = '';
+                }
+                
                 // match characters that are different of spaces, tabs, line breaks...
                 const matchNotEmpty = /[^\s]+/i
                 // match characters that are between line spaces, tabs, line breaks...
